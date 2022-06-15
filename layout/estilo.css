@@ -1,5 +1,5 @@
 :root{
-    --primary-color: lightblue;
+    --primary-color: rgb(206, 72, 67);
     --second-color: rgb(233, 233, 93);
     --third-color: lightcoral;
 }
@@ -22,8 +22,13 @@ fieldset{
     border-color: black;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: rgb(158, 154, 154);
+    background-color: rgb(192, 192, 192);
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
 }
-#confirmacaoLog{
-    background-color: rgb(110, 71, 71);
+#confirmacao{
+    background-color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-color: black;
 }
