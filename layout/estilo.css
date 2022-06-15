@@ -1,0 +1,29 @@
+:root{
+    --primary-color: lightblue;
+    --second-color: rgb(233, 233, 93);
+    --third-color: lightcoral;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-Size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#confirmacaoLog{
+    background-color: var(--second-color);
+    text-transform: capitalize; /*Transformar as letras da sentença em Maiúsculas*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: bold;
+}
+fieldset{
+    border-radius: 2px;
+    border-color: black;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(158, 154, 154);
+}
+#confirmacaoLog{
+    background-color: rgb(110, 71, 71);
+}
