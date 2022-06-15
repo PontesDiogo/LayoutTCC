@@ -4,10 +4,20 @@
     --third-color: lightcoral;
 }
 
+
 body{
     background-color: var(--primary-color);
     font-Size: 17px;
     font-family: 'Times New Roman', Times, serif;
+}
+#titulo{
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(192, 192, 192);
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border-color: black;
 }
 
 #confirmacaoLog{
