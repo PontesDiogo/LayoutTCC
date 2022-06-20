@@ -66,21 +66,7 @@ fieldset{
     margin-top: none;
 }
 
-#tituloForm{ 
-    background-color: var(--second-color);
-    padding: 20px;
-    text-transform: uppercase; /*Transformar as letras da sentença em Maiúsculas*/
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    margin: auto;
-    font-style: bold;
-    text-align: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius:20px;
-    margin-top: 0px;
-    border-color: black;
-    border: 2px;
-}
+
 .loginTitulo{
     background-color: var(--third-color);
     text-transform:initial; /*Transformar as letras da sentença em Maiúsculas*/
@@ -91,6 +77,4 @@ fieldset{
 
 }
 
-#cadastroForm{
 
-}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="inicio.css">
     <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Site</title>
 </head>
@@ -41,6 +42,9 @@
             <h1 id="tituloForm">Cadastro</h1>
         </div>
         <div>
+            <h3 id="conteudoForm"> Vamos iniciar seu login, por favor insira suas informações abaixo:</h3>
+        </div>
+        <div>
             <form class="cadastroForm" id="cadastroForm">
                 <label for="cadNome" class="nomenoForm">
                     <p>Nome Completo</p>
@@ -48,37 +52,51 @@
                 <p>
                     <input type="text" name="cadNome" class="cadNome" required>   
                 </p>
-                <label for="cadEmail" id="emailnoForm">
-                    <p class="emailLog">Email</p>
+                <label for="cadEmail" id="emailnoFormCad">
+                    <p class="emailCad">Email</p>
                 <p>
                     <input type="email" name="cadEmail" class="cadEmail" required>
                 </p>
                  </label>
-                <label for="logSenha" class="cadSenha"> 
+                <label for="cadSenha" class="senhanoFormCad"> 
                     <p>Senha</p>
                 </label>
                 <p>
                     <input type="password" name="cadSenha" id="cadSenha" required>
                 </p>
-                <button type="submit" class="formSubmit">Calcular</button>
+                <input type="checkbox" name="mostrarSenha" id="mostrarSenha">Exibir senha
+                <button type="submit" class="formSubmit">Cadastrar</button>
+                
             </form>
         </div>
-        <div id="totalTip">
-            Gorjeta total:
-            R$ <span id="tip">0,00</span>
-            <span id="each">cada</span>
+        <div id="confirmResponse">
+            Cadastro 
+            <span id="confirmCad">realizado com sucesso</span>
+            <span id="erroCad">não realizado, por favor insira informações validas e tente novamente </span>
         </div>
 
-        <div id="login">
-            <label for="login" class="logEmail">
-                <p> Insira seu email </p>
-                <input type="email" name="logEmail" id="logEmail">
-            </label>
-            <label for="login" class="logSenha">
-                <p> Insira sua senha </p>
-                <input type="password" name="logSenha" id="logSenha">
-            </label>
+        
+    </div>
+    <div id="container">
+        <div>
+            <h1 id="tituloForm">Login</h1>
         </div>
+        <div>
+            <h3 id="conteudoForm"> Por favor, insira seus dados para realizar o login em sua conta</h3>
+        </div>
+        <form class="FormLogin" id="FormLogin">
+            <label for="loginEmail" class="logEmail"> </label>
+                <p class="emailLog"> Insira seu email </p>
+                <p>
+                    <input type="email" name="loginEmail" class="loginEmail">
+                </p>
+           
+            <label for="loginSenha" class="logSenha"></label>
+                <p> Insira sua senha </p>
+            <p>
+            <input type="password" name="loginSenha" class="loginSenha">
+            </p>
+        </form>
     </div>
 
     <script type="text/javascript" src="script.js"></script>
