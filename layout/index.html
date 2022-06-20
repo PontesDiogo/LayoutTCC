@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="cadastro.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Site</title>
 </head>
@@ -13,27 +14,73 @@
     </div>
 
     <div>
-        <form class="Form" id="Form"> 
-            <fieldset>
-            <label for="login">
+        <fieldset class="fieldset">
+            <label for="login" class="loginTitulo">
                 <p>Bem Vindo, vamos acessar sua conta</p>
             </label>
+        <form class="Form" id="Form"> 
             <label for="pgtConfirmarConta" id="confirmacaoLog">
-            <p>
-                
+            <p class="pgt">
                 Você já possui conta? 
-               
             </p>
-        </label>
         <p>
             <select name="pgtConfirmarConta" id="confirmacao" required>
                 <option disabled selected value ="0">Escolha uma opção</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
+         </label>
         </p>
+        <button type="submit" class="enviar"> Enviar Resposta</button>
      </fieldset>
         </form>
     </div>
+    <!--Cadastro-->
+    <div id="container">
+        <div>
+            <h1 id="tituloForm">Cadastro</h1>
+        </div>
+        <div>
+            <form class="cadastroForm" id="cadastroForm">
+                <label for="cadNome" class="nomenoForm">
+                    <p>Nome Completo</p>
+                </label>
+                <p>
+                    <input type="text" name="cadNome" class="cadNome" required>   
+                </p>
+                <label for="cadEmail" id="emailnoForm">
+                    <p class="emailLog">Email</p>
+                <p>
+                    <input type="email" name="cadEmail" class="cadEmail" required>
+                </p>
+                 </label>
+                <label for="logSenha" class="cadSenha"> 
+                    <p>Senha</p>
+                </label>
+                <p>
+                    <input type="password" name="cadSenha" id="cadSenha" required>
+                </p>
+                <button type="submit" class="formSubmit">Calcular</button>
+            </form>
+        </div>
+        <div id="totalTip">
+            Gorjeta total:
+            R$ <span id="tip">0,00</span>
+            <span id="each">cada</span>
+        </div>
+
+        <div id="login">
+            <label for="login" class="logEmail">
+                <p> Insira seu email </p>
+                <input type="email" name="logEmail" id="logEmail">
+            </label>
+            <label for="login" class="logSenha">
+                <p> Insira sua senha </p>
+                <input type="password" name="logSenha" id="logSenha">
+            </label>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
