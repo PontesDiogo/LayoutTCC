@@ -101,10 +101,17 @@
     font-size: 10px ;
     border: 1px solid ;
 }
-.emailnoFormCad {
+.emailCad {
     font-size: 14px;
 }
-
+.cadNome {
+    background: white;
+    width: 200px;
+    height: 11px;
+    padding: 5px 5px 8px 8px;
+    font-size: 14px;
+    border: 1px solid ;
+}
 .cadEmail:focus {
     border: 2px solid lightseagreen;
     outline: none;
